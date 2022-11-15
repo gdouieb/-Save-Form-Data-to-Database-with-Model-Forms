@@ -1,0 +1,63 @@
+
+
+<<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Form </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
+
+<main>
+    
+    
+    <form method = "POST" action = "{% url 'upload' %}" enctype= "multipart/form-data">
+            {% csrf_token %}	
+            {{form}}
+            <button> "submit"</button>
+        </form>
+            <!-- <section id = "form">
+		<br/><br/>
+
+			<form id = "mailForm" name = "mailForm" action ="/data" method= "GET">
+				<label for = "surnameInput"> Quelle est votre Nom ? </label>
+				&nbsp;<input type ="text" id="surnameInput" name ="surnameInput" required/>
+				<br/><br/>
+				<label for = "nameInput"> Quelle est votre Prenom ? </label>
+				&nbsp;<input type ="text" id="nameInput" name ="nameInput" required/>
+				&nbsp;
+				<br/><br/>
+				<label for = "mailInput"> Quelle est votre date de naissance ? </label>
+				&nbsp;<input type ="date" id="dateInput" name ="dateInput" required/>
+				&nbsp;
+				<br/><br/>
+					
+				
+				
+	<input id = "buttonGo" type = "submit" value= "GO" onClick = "checkSubmit();"/>
+				
+				&nbsp;<input type = "submit" value = "GO"/> 
+							
+			</form>
+			<br/>
+			<span id ="checkSpan"></span>
+			<br/><br/>
+			<span id = "urlSpan"></span>
+		</section>
+		<br/><br/> -->
+	</main>
